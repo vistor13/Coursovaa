@@ -30,7 +30,31 @@ namespace Coursovaa
 
             }
             
+
         }
-        
+        public static void Separate(ListBox LB1,ListBox LB2,ListBox LB3)
+        {
+
+            var s = (Subjectc)LB1.SelectedItem;
+            var t = (time)LB2.SelectedItem;
+            Linked del = Linked.It.Values.Where(l => l.Subjectc == s && l.times == t).FirstOrDefault(); ;
+            if (del != null)
+            {
+                Linked.It.Remove(del.Id);
+                Linked.RefreshLinked(LB3, LB1);
+            }
+
+        }
+        public static void Unite(ListBox LB1, ListBox LB2, ListBox LB3)
+        {
+            var s = (Subjectc)LB1.SelectedItem;
+            var t = (time)LB2.SelectedItem;
+            
+              var ex = Linked.It.Values.Where(l => l.Subjectc == s && l.times == t).FirstOrDefault();
+            if (ex == null)
+                new Linked() { Subjectc = (Subjectc)LB1.SelectedItem, times = (time)LB2.SelectedItem };
+            Linked.RefreshLinked(LB3, LB1);
+        }
+
     }
 }

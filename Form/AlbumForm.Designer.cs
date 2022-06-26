@@ -71,9 +71,8 @@ namespace Coursovaa
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(88, 302);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(24, 17);
+            this.label2.Size = new System.Drawing.Size(0, 17);
             this.label2.TabIndex = 2;
-            this.label2.Text = "11";
             // 
             // pictureBox2
             // 
@@ -92,18 +91,17 @@ namespace Coursovaa
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label3.Location = new System.Drawing.Point(340, 263);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(135, 29);
+            this.label3.Size = new System.Drawing.Size(92, 29);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Навчання";
+            this.label3.Text = "Школа";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(342, 302);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(16, 17);
+            this.label4.Size = new System.Drawing.Size(0, 17);
             this.label4.TabIndex = 5;
-            this.label4.Text = "9";
             // 
             // pictureBox1
             // 
@@ -131,7 +129,7 @@ namespace Coursovaa
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft YaHei UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(84, 12);
+            this.label5.Location = new System.Drawing.Point(84, 8);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(151, 37);
             this.label5.TabIndex = 7;

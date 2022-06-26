@@ -31,5 +31,10 @@ namespace Coursovaa
             get { return label6.Text; }
             set { label6.Text = value; }
         }
+
+        private void FormInformAlbum_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

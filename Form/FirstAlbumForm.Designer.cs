@@ -38,7 +38,6 @@ namespace Coursovaa
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.listTime1 = new System.Windows.Forms.ListBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -46,6 +45,7 @@ namespace Coursovaa
             this.btdislinked = new System.Windows.Forms.Button();
             this.btsearch = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
+            this.listTime1 = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // listSubject1
@@ -132,15 +132,6 @@ namespace Coursovaa
             this.textBox1.Size = new System.Drawing.Size(276, 22);
             this.textBox1.TabIndex = 8;
             // 
-            // listTime1
-            // 
-            this.listTime1.FormattingEnabled = true;
-            this.listTime1.ItemHeight = 16;
-            this.listTime1.Location = new System.Drawing.Point(724, 134);
-            this.listTime1.Name = "listTime1";
-            this.listTime1.Size = new System.Drawing.Size(103, 132);
-            this.listTime1.TabIndex = 9;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -177,6 +168,7 @@ namespace Coursovaa
             this.lbLinked1.ItemHeight = 16;
             this.lbLinked1.Location = new System.Drawing.Point(722, 313);
             this.lbLinked1.Name = "lbLinked1";
+            this.lbLinked1.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
             this.lbLinked1.Size = new System.Drawing.Size(105, 132);
             this.lbLinked1.TabIndex = 13;
             // 
@@ -192,7 +184,7 @@ namespace Coursovaa
             // 
             // btsearch
             // 
-            this.btsearch.Location = new System.Drawing.Point(696, 477);
+            this.btsearch.Location = new System.Drawing.Point(696, 479);
             this.btsearch.Name = "btsearch";
             this.btsearch.Size = new System.Drawing.Size(169, 70);
             this.btsearch.TabIndex = 15;
@@ -209,6 +201,16 @@ namespace Coursovaa
             this.label7.Size = new System.Drawing.Size(70, 25);
             this.label7.TabIndex = 16;
             this.label7.Text = "label7";
+            // 
+            // listTime1
+            // 
+            this.listTime1.FormattingEnabled = true;
+            this.listTime1.ItemHeight = 16;
+            this.listTime1.Location = new System.Drawing.Point(724, 134);
+            this.listTime1.Name = "listTime1";
+            this.listTime1.Size = new System.Drawing.Size(103, 132);
+            this.listTime1.TabIndex = 9;
+            this.listTime1.SelectedIndexChanged += new System.EventHandler(this.listTime1_SelectedIndexChanged);
             // 
             // FirstAlbumForm
             // 
@@ -251,7 +253,6 @@ namespace Coursovaa
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ListBox listTime1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button1;
@@ -259,5 +260,6 @@ namespace Coursovaa
         private System.Windows.Forms.Button btdislinked;
         private System.Windows.Forms.Button btsearch;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ListBox listTime1;
     }
 }

@@ -45,6 +45,7 @@ namespace Coursovaa
             this.btdelet2 = new System.Windows.Forms.Button();
             this.btAdd2 = new System.Windows.Forms.Button();
             this.listSubject2 = new System.Windows.Forms.ListBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btsearch1
@@ -199,11 +200,22 @@ namespace Coursovaa
             this.listSubject2.TabIndex = 16;
             this.listSubject2.SelectedIndexChanged += new System.EventHandler(this.listSubject2_SelectedIndexChanged);
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label7.Location = new System.Drawing.Point(488, 327);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(85, 29);
+            this.label7.TabIndex = 32;
+            this.label7.Text = "label7";
+            // 
             // SecondAlbumForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1020, 689);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.btsearch1);
             this.Controls.Add(this.btdislinked2);
             this.Controls.Add(this.lbLinked2);
@@ -246,5 +258,6 @@ namespace Coursovaa
         private System.Windows.Forms.Button btdelet2;
         private System.Windows.Forms.Button btAdd2;
         private System.Windows.Forms.ListBox listSubject2;
+        private System.Windows.Forms.Label label7;
     }
 }

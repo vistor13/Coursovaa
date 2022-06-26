@@ -41,9 +41,9 @@ namespace Coursovaa
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.Location = new System.Drawing.Point(60, 112);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(783, 29);
+            this.label1.Size = new System.Drawing.Size(798, 29);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Нажаль,ви досягнули максимуму додавань фото.Дякуєм,вам!!";
+            this.label1.Text = "Нажаль,ви досягнули максимуму додавань фото.Дякуємо, вам!";
             // 
             // pictureBox1
             // 

@@ -48,23 +48,29 @@
   <ItemGroup>
     <Compile Include="Class\Album.cs" />
     <Compile Include="Class\Base.cs" />
+    <Compile Include="Form\Find.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Find.Designer.cs">
+      <DependentUpon>Find.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form\FirstAlbumForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form\FirstAlbumForm.Designer.cs">
       <DependentUpon>FirstAlbumForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form\Form1.cs">
+    <Compile Include="Form\Main.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Form\Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form\Form2.cs">
+    <Compile Include="Form\AlbumForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="Form\AlbumForm.Designer.cs">
+      <DependentUpon>AlbumForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Form\FormAddALBUM.cs">
       <SubType>Form</SubType>
@@ -98,11 +104,11 @@
     <Compile Include="Form\photo1.Designer.cs">
       <DependentUpon>photo1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form\photo1_2cs.cs">
+    <Compile Include="Form\photo1_2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\photo1_2cs.Designer.cs">
-      <DependentUpon>photo1_2cs.cs</DependentUpon>
+    <Compile Include="Form\photo1_2.Designer.cs">
+      <DependentUpon>photo1_2.cs</DependentUpon>
     </Compile>
     <Compile Include="Form\photo2.cs">
       <SubType>Form</SubType>
@@ -126,20 +132,23 @@
     <Compile Include="Form\Wrong.Designer.cs">
       <DependentUpon>Wrong.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form\WrongProperties.cs">
+    <Compile Include="Form\WrongName.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\WrongProperties.Designer.cs">
-      <DependentUpon>WrongProperties.cs</DependentUpon>
+    <Compile Include="Form\WrongName.Designer.cs">
+      <DependentUpon>WrongName.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Form\Find.resx">
+      <DependentUpon>Find.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form\FirstAlbumForm.resx">
       <DependentUpon>FirstAlbumForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Form\Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="Form\AlbumForm.resx">
+      <DependentUpon>AlbumForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\FormAddALBUM.resx">
       <DependentUpon>FormAddALBUM.cs</DependentUpon>
@@ -156,11 +165,14 @@
     <EmbeddedResource Include="Form\photo1.resx">
       <DependentUpon>photo1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\photo1_2cs.resx">
-      <DependentUpon>photo1_2cs.cs</DependentUpon>
+    <EmbeddedResource Include="Form\photo1_2.resx">
+      <DependentUpon>photo1_2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\photo2.resx">
       <DependentUpon>photo2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\WrongName.resx">
+      <DependentUpon>WrongName.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -177,7 +189,7 @@
     <EmbeddedResource Include="Form\Wrong.resx">
       <DependentUpon>Wrong.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
     <None Include="photo1.Designer.2cs" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

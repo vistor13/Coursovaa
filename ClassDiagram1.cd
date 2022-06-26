@@ -7,35 +7,35 @@
       <FileName>Class\Base.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Coursovaa.Album" Collapsed="true">
-    <Position X="0.75" Y="5" Width="1.5" />
+  <Class Name="Coursovaa.Album">
+    <Position X="1.5" Y="6.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAABAAAQAIAAAABAAAAgAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAIAAAAAAABABAAAQAAAAAABAAAAgAAAAAAAA=</HashCode>
       <FileName>Class\Album.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Coursovaa.Linked" Collapsed="true">
+  <Class Name="Coursovaa.Linked">
     <Position X="0.75" Y="3.25" Width="1.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAgAAAAAAAACEBgAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAABkAAAAAAAACEBgAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Class\Linked.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Coursovaa.Photo" Collapsed="true">
-    <Position X="3.5" Y="5" Width="1.5" />
+  <Class Name="Coursovaa.Photo">
+    <Position X="3.5" Y="5.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAEAAAAAAABAAAAAAAQEAAAAABAABACBAAAAAAA=</HashCode>
+      <HashCode>AAAAAAEAIAAAAABAAAAAAAAEEAAAABAABACBAAAAAAA=</HashCode>
       <FileName>Class\Photo.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Coursovaa.Subjectc" Collapsed="true">
+  <Class Name="Coursovaa.Subjectc">
     <Position X="2.25" Y="3.25" Width="1.25" />
     <TypeIdentifier>
       <HashCode>BAABAAAAAAAAAAAEAAAAAAQAAgkAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Class\Subjectc.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Coursovaa.time" Collapsed="true">
+  <Class Name="Coursovaa.time">
     <Position X="3.75" Y="3.25" Width="1.25" />
     <TypeIdentifier>
       <HashCode>BAAAAAAAAAAAAAAEAAAAAAQEAAAAAAAAAAAAAAAAAAA=</HashCode>
@@ -45,7 +45,7 @@
   <Class Name="Coursovaa.FirstAlbumForm" Collapsed="true">
     <Position X="8" Y="4.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAEAIAAAACAAABCAgACABBASAAAIAAgpkkAAAAAAQIA=</HashCode>
+      <HashCode>AAEAIAAAACAAABCAgACABBASAAAIAAgJkkAAAAAAQIA=</HashCode>
       <FileName>Form\FirstAlbumForm.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -53,20 +53,20 @@
     <Position X="8" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAACAAABAAAACAQCACAAAAAAAAAAQAAABAAAA=</HashCode>
-      <FileName>Form\Form1.cs</FileName>
+      <FileName>Form\Main.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Coursovaa.Form2" Collapsed="true">
     <Position X="8" Y="2.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAIpAgCGAAABAAEBCISAQCgAAIAAAAAEAAEIDAAAA=</HashCode>
-      <FileName>Form\Form2.cs</FileName>
+      <HashCode>AJAAIpAgCGAAABAAEBCISAQCgAAIAAAAAEAAEIDAAAA=</HashCode>
+      <FileName>Form\AlbumForm.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Coursovaa.FormAddALBUM" Collapsed="true">
     <Position X="6" Y="3.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAACAAABAAAACAAAACAAAYAAAAEGAAAABAAAA=</HashCode>
+      <HashCode>AACAAAAAACAAABAAAACAAAACAAAYAAAAEGAAAABAAAA=</HashCode>
       <FileName>Form\FormAddALBUM.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -80,7 +80,7 @@
   <Class Name="Coursovaa.FormInformAlbum" Collapsed="true">
     <Position X="10" Y="4.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAQAAAAAACAAABAAAACAAAACAAAAAQAAAAABAAAAAAA=</HashCode>
+      <HashCode>AAQAAAACACAAABAAAACAAAACAAAAAQAAAAABAAAAAAA=</HashCode>
       <FileName>Form\FormInformAlbum.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -101,8 +101,8 @@
   <Class Name="Coursovaa.photo1_2cs" Collapsed="true">
     <Position X="10" Y="3.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>/yAAMhBAgCAAARgAAACAQAQCAQAIAIAAQEAgAIBAIDA=</HashCode>
-      <FileName>Form\photo1_2cs.cs</FileName>
+      <HashCode>/yAAMhBAgCAAARgAAACAQAQCAQAIAIAAQEAgAIBBIDA=</HashCode>
+      <FileName>Form\photo1_2.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Coursovaa.photo2" Collapsed="true">

@@ -120,6 +120,7 @@ namespace Coursovaa
             this.Controls.Add(this.label1);
             this.Name = "FormAddALBUM";
             this.Text = "FormAddALBUM";
+            this.Load += new System.EventHandler(this.FormAddALBUM_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);

@@ -29,6 +29,7 @@ namespace Coursovaa
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(photo2));
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -75,6 +76,7 @@ namespace Coursovaa
             this.pictureBox20 = new System.Windows.Forms.PictureBox();
             this.pictureBox21 = new System.Windows.Forms.PictureBox();
             this.label20 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -396,9 +398,9 @@ namespace Coursovaa
             // 
             // pictureBox11
             // 
-            this.pictureBox11.Location = new System.Drawing.Point(181, 244);
+            this.pictureBox11.Location = new System.Drawing.Point(179, 244);
             this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(35, 34);
+            this.pictureBox11.Size = new System.Drawing.Size(23, 34);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox11.TabIndex = 38;
             this.pictureBox11.TabStop = false;
@@ -406,9 +408,9 @@ namespace Coursovaa
             // 
             // pictureBox12
             // 
-            this.pictureBox12.Location = new System.Drawing.Point(418, 244);
+            this.pictureBox12.Location = new System.Drawing.Point(410, 248);
             this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(35, 34);
+            this.pictureBox12.Size = new System.Drawing.Size(23, 34);
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox12.TabIndex = 39;
             this.pictureBox12.TabStop = false;
@@ -416,9 +418,9 @@ namespace Coursovaa
             // 
             // pictureBox13
             // 
-            this.pictureBox13.Location = new System.Drawing.Point(657, 244);
+            this.pictureBox13.Location = new System.Drawing.Point(647, 244);
             this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(35, 34);
+            this.pictureBox13.Size = new System.Drawing.Size(23, 34);
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox13.TabIndex = 40;
             this.pictureBox13.TabStop = false;
@@ -426,9 +428,9 @@ namespace Coursovaa
             // 
             // pictureBox14
             // 
-            this.pictureBox14.Location = new System.Drawing.Point(881, 245);
+            this.pictureBox14.Location = new System.Drawing.Point(868, 244);
             this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(35, 34);
+            this.pictureBox14.Size = new System.Drawing.Size(23, 34);
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox14.TabIndex = 41;
             this.pictureBox14.TabStop = false;
@@ -436,9 +438,9 @@ namespace Coursovaa
             // 
             // pictureBox15
             // 
-            this.pictureBox15.Location = new System.Drawing.Point(1084, 244);
+            this.pictureBox15.Location = new System.Drawing.Point(1073, 244);
             this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(35, 34);
+            this.pictureBox15.Size = new System.Drawing.Size(23, 34);
             this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox15.TabIndex = 42;
             this.pictureBox15.TabStop = false;
@@ -446,9 +448,9 @@ namespace Coursovaa
             // 
             // pictureBox16
             // 
-            this.pictureBox16.Location = new System.Drawing.Point(181, 535);
+            this.pictureBox16.Location = new System.Drawing.Point(181, 533);
             this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(35, 34);
+            this.pictureBox16.Size = new System.Drawing.Size(21, 34);
             this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox16.TabIndex = 43;
             this.pictureBox16.TabStop = false;
@@ -456,9 +458,9 @@ namespace Coursovaa
             // 
             // pictureBox17
             // 
-            this.pictureBox17.Location = new System.Drawing.Point(418, 533);
+            this.pictureBox17.Location = new System.Drawing.Point(410, 538);
             this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(35, 34);
+            this.pictureBox17.Size = new System.Drawing.Size(23, 34);
             this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox17.TabIndex = 44;
             this.pictureBox17.TabStop = false;
@@ -466,9 +468,9 @@ namespace Coursovaa
             // 
             // pictureBox18
             // 
-            this.pictureBox18.Location = new System.Drawing.Point(657, 533);
+            this.pictureBox18.Location = new System.Drawing.Point(647, 533);
             this.pictureBox18.Name = "pictureBox18";
-            this.pictureBox18.Size = new System.Drawing.Size(35, 34);
+            this.pictureBox18.Size = new System.Drawing.Size(23, 34);
             this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox18.TabIndex = 45;
             this.pictureBox18.TabStop = false;
@@ -476,9 +478,9 @@ namespace Coursovaa
             // 
             // pictureBox19
             // 
-            this.pictureBox19.Location = new System.Drawing.Point(881, 533);
+            this.pictureBox19.Location = new System.Drawing.Point(868, 533);
             this.pictureBox19.Name = "pictureBox19";
-            this.pictureBox19.Size = new System.Drawing.Size(35, 34);
+            this.pictureBox19.Size = new System.Drawing.Size(23, 34);
             this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox19.TabIndex = 46;
             this.pictureBox19.TabStop = false;
@@ -486,9 +488,9 @@ namespace Coursovaa
             // 
             // pictureBox20
             // 
-            this.pictureBox20.Location = new System.Drawing.Point(1084, 533);
+            this.pictureBox20.Location = new System.Drawing.Point(1083, 533);
             this.pictureBox20.Name = "pictureBox20";
-            this.pictureBox20.Size = new System.Drawing.Size(35, 34);
+            this.pictureBox20.Size = new System.Drawing.Size(23, 34);
             this.pictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox20.TabIndex = 47;
             this.pictureBox20.TabStop = false;
@@ -510,11 +512,23 @@ namespace Coursovaa
             this.label20.Size = new System.Drawing.Size(0, 17);
             this.label20.TabIndex = 49;
             // 
+            // button2
+            // 
+            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button2.Location = new System.Drawing.Point(23, 24);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(40, 32);
+            this.button2.TabIndex = 50;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // photo2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1182, 731);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.pictureBox21);
             this.Controls.Add(this.pictureBox20);
@@ -637,5 +651,6 @@ namespace Coursovaa
         private System.Windows.Forms.PictureBox pictureBox20;
         private System.Windows.Forms.PictureBox pictureBox21;
         private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Button button2;
     }
 }

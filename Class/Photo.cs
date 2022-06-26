@@ -9,19 +9,20 @@ using System.Windows.Forms;
 
 namespace Coursovaa
 {
-    public class Photo
+    public class Photo:Base<Photo>
     {
-        public Image image;
+        public string photopath { get; set; }
         public string Data { get; set; }
         public string Geo { get; set; }
-
-        public static List<Photo> photos;
-        public Photo() { }
-        public Photo(string data,string geo)
+        public string Name { get; set; }
+        private Guid _AlbumId;
+        public Album albums
         {
-            this.Data = data;
-            this.Geo = geo;
+            get { return Album.It[_AlbumId]; }
+            set { _AlbumId = value.Id; }
         }
+       public Photo() { }
+       
         public static void AddPicture(PictureBox pb,Label LB1,Label LB2, Photo p1)
         {
 
@@ -35,24 +36,29 @@ namespace Coursovaa
             }
         }
       
-        public static void Inform(Label LB1,Label LB2,Photo P1)
+        public static void Inform(Label LB1,Label LB2,PictureBox p ,Photo P1)
         {
+            p.Image = Image.FromFile(P1.photopath);
             LB1.Text = P1.Data;
             LB2.Text = P1.Geo;
+
         }
-        public static void SaveFile(string path,string text1)
+        public static void SaveFile(string path,Photo p1)
         {
+            string text1 = Photo.TextOfPhoto(p1);
             using (StreamWriter s = File.AppendText(path))
             {
                 s.WriteLine(text1);
             }
         }
-       
-        
-
-        public static string TextOfPhoto(Label LB,Label LB1)
+        public static void ReWriteTextFile(string path)
         {
-           return $"Місце : " + LB.Text + " " + " Дата: " + LB1.Text;
+            string g = " ";
+            File.WriteAllText(path, g);
+        }
+        public static string TextOfPhoto(Photo p)
+        {
+           return $"Місце : " + p.Geo + " " + " Дата: " + p.Data;
         }
         public static void AddPicturesOfInform(Label LB,PictureBox PB,string file)
         {
@@ -61,6 +67,6 @@ namespace Coursovaa
                 PB.Image = Image.FromFile(file);
             } 
         }
-      
+       
     }
 }

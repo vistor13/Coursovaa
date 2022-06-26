@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Coursovaa.Photo">
+    <Position X="1.75" Y="2" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAABAAAAEAAQEAAQAABAIBADBAAAAAAA=</HashCode>
+      <FileName>Class\Photo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Coursovaa.Program" Collapsed="true">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Class\Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Coursovaa.Base&lt;T&gt;" Collapsed="true">
+    <Position X="3" Y="0.75" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Class\Base.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Coursovaa.Album">
+    <Position X="5.5" Y="2" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAEBABAAAQAAAAAABAAAAgAAAAAAAA=</HashCode>
+      <FileName>Class\Album.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Coursovaa.Subjectc">
+    <Position X="0.5" Y="2" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>BAABAAAAAAAAAAAEAAAAAAQAAgkAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Class\Subjectc.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Coursovaa.time">
+    <Position X="3" Y="2" Width="1.25" />
+    <InheritanceLine Type="Coursovaa.Base&lt;T&gt;" FixedFromPoint="true">
+      <Path>
+        <Point X="3.625" Y="1.312" />
+        <Point X="3.625" Y="2" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAEAAAAAAQEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Class\time.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Coursovaa.FirstAlbumForm" Collapsed="true">
+    <Position X="7" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAIAEAACAAABCEgACABBASAAAIAAgJkkAAAAAAQIA=</HashCode>
+      <FileName>Form\FirstAlbumForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Coursovaa.Find" Collapsed="true">
+    <Position X="9" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>/wAAIhAAACAAARAAAACAQAQCAAAAAQAAQAAgAIBAADA=</HashCode>
+      <FileName>Form\Find.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Coursovaa.Form2" Collapsed="true">
+    <Position X="11" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AJAAIv5hCGBAADAAEBCISAQCgAAIAEAAAEAAEJDAAAA=</HashCode>
+      <FileName>Form\AlbumForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Coursovaa.FormAddALBUM" Collapsed="true">
+    <Position X="9" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAACAAABAAAACAAAACAAAYAAAAEGAAAABAAAA=</HashCode>
+      <FileName>Form\FormAddALBUM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Coursovaa.FormInformAlbum" Collapsed="true">
+    <Position X="11" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAACACAAABAAAACAAAACAAAAAQAAAAABAAAAAAA=</HashCode>
+      <FileName>Form\FormInformAlbum.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Coursovaa.FormShowInfoPhoto" Collapsed="true">
+    <Position X="11" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAABAAAACAAAACAAAAAQAAAEAAAAAAAAA=</HashCode>
+      <FileName>Form\FormShowInfoPhoto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Coursovaa.openphoto" Collapsed="true">
+    <Position X="7" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAACAAAAAAAACAAAACAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Form\openphoto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Coursovaa.Form1" Collapsed="true">
+    <Position X="10.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACBAADAAAACAQCACAAAAAAAAAAQAAABAAQA=</HashCode>
+      <FileName>Form\Main.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Coursovaa.photo1" Collapsed="true">
+    <Position X="8" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>/yAAchBgoiAAATgAAACAQASCgQAIAIAAwEAgAJBAIDA=</HashCode>
+      <FileName>Form\photo1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Coursovaa.photo1_2cs" Collapsed="true">
+    <Position X="9" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>/yAAMhBAgCAAATgAAACAQAQCAQAIAIAAwEAgAJBBIDA=</HashCode>
+      <FileName>Form\photo1_2.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Coursovaa.photo2" Collapsed="true">
+    <Position X="7" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>/wAAMhAggCAAATgAAACAQASCAQAIAAAAQEAgAJBAIDA=</HashCode>
+      <FileName>Form\photo2.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Coursovaa.SecondAlbumForm" Collapsed="true">
+    <Position X="9" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAQAAAACAAgBCQAACABAASAIAQAAABkCAAGAAAQIA=</HashCode>
+      <FileName>Form\SecondAlbumForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Coursovaa.Wrong" Collapsed="true">
+    <Position X="7" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAABAAAACAAAACAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Form\Wrong.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Coursovaa.WrongName" Collapsed="true">
+    <Position X="11" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAABAAAACAAAACAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Form\WrongName.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Windows.Forms.Form" Collapsed="true">
+    <Position X="9" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Coursovaa.Linked">
+    <Position X="4.25" Y="2" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABkAAAAAAAACEBgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Class\Linked.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

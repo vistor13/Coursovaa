@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Coursovaa
 {
-    public partial class WrongProperties : Form
+    public partial class WrongName : Form
     {
-        public WrongProperties()
+        public WrongName()
         {
             InitializeComponent();
+        }
+        public string TN
+        {
+            get { return label1.Text; }
+            set { label1.Text = value; }
         }
     }
 }

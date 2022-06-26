@@ -17,26 +17,30 @@ namespace Coursovaa
             InitializeComponent();
         }
         int p = 1;
+        int p1 = 1;
+        string path2 = @"C:\кпи\кпи 1 курс 2 семестр\курсова\Coursovaa1\info2.txt";
+
+        string file1 = @"C:\кпи\кпи 1 курс 2 семестр\курсова\Coursovaa1\свойства.jpg";
+        Album ALBUM = new Album();
         private void button1_Click(object sender, EventArgs e)
         {
+            Photo photo10 = new Photo() { Data = "2020", Geo = "Київ" ,albums=ALBUM};
+            Photo photo11 = new Photo() { Data = "2020", Geo = "Київ", albums = ALBUM };
+            Photo photo12 = new Photo() { Data = "2021", Geo = "Київ", albums = ALBUM };
+            Photo photo13 = new Photo() { Data = "2019", Geo = "Київ", albums = ALBUM };
+            Photo photo14 = new Photo() { Data = "2022", Geo = "Київ", albums = ALBUM };
+            Photo photo15 = new Photo() { Data = "2021", Geo = "Київ", albums = ALBUM };
+            Photo photo16 = new Photo() { Data = "2022", Geo = "Київ", albums = ALBUM };
 
-            Photo photo10 = new Photo("2019", "Київ");
-            Photo photo11 = new Photo("2019", "Київ");
-            Photo photo12 = new Photo("2019", "Київ");
-            Photo photo13 = new Photo("2019", "Київ");
-            Photo photo14 = new Photo("2019", "Київ");
-            Photo photo15 = new Photo("2019", "Київ");
-            Photo photo16 = new Photo("2019", "Київ");
-         
-            string file1 = @"C:\кпи\кпи 1 курс 2 семестр\курсова\свойства.jpg";
-            string path2 = @"C:\кпи\кпи 1 курс 2 семестр\курсова\Coursovaa\bin\Debug\dannie2.txt";
+
+
 
             if (p == 1)
             {
                 Photo.AddPicture(pictureBox10, label21, label20, photo10);
                 Photo.AddPicturesOfInform(label21, pictureBox31, file1);
-                string h = Photo.TextOfPhoto(label21, label20);
-                Photo.SaveFile(path2, h);
+                Photo.SaveFile(path2, photo10);
+             
                 p++;
                
             }
@@ -45,8 +49,8 @@ namespace Coursovaa
               
                 Photo.AddPicture(pictureBox11, label23, label22, photo11);
                 Photo.AddPicturesOfInform(label23, pictureBox32, file1);
-                string h = Photo.TextOfPhoto(label23, label22);
-                Photo.SaveFile(path2, h);
+                Photo.SaveFile(path2, photo11);
+          
                 p++;
                
             }
@@ -55,8 +59,8 @@ namespace Coursovaa
                
                 Photo.AddPicture(pictureBox12, label25, label24, photo12);
                 Photo.AddPicturesOfInform(label25, pictureBox17, file1);
-                string h = Photo.TextOfPhoto(label25, label24);
-                Photo.SaveFile(path2, h);
+                Photo.SaveFile(path2, photo12);
+               
                 p++;
                 
             }
@@ -65,8 +69,8 @@ namespace Coursovaa
                 
                 Photo.AddPicture(pictureBox13, label27, label26, photo13);
                 Photo.AddPicturesOfInform(label27, pictureBox18, file1);
-                string h = Photo.TextOfPhoto(label27, label26);
-                Photo.SaveFile(path2, h);
+                Photo.SaveFile(path2, photo13);
+                
 
                 p++;
                 
@@ -76,8 +80,8 @@ namespace Coursovaa
                 
                 Photo.AddPicture(pictureBox14, label29, label28, photo14);
                 Photo.AddPicturesOfInform(label29, pictureBox19, file1);
-                string h = Photo.TextOfPhoto(label28, label27);
-                Photo.SaveFile(path2, h);
+                Photo.SaveFile(path2, photo14);
+              
 
                 p++;
                 
@@ -88,8 +92,8 @@ namespace Coursovaa
                 Photo.AddPicture(pictureBox14, label31, label30, photo15);
 
                 Photo.AddPicturesOfInform(label31, pictureBox20, file1);
-                string h = Photo.TextOfPhoto(label30, label29);
-                Photo.SaveFile(path2, h);
+                Photo.SaveFile(path2, photo15);
+                
                 p++;
                 
             }
@@ -98,8 +102,8 @@ namespace Coursovaa
                 
                 Photo.AddPicture(pictureBox14, label33, label32, photo16);
                 Photo.AddPicturesOfInform(label33, pictureBox21, file1);
-                string h = Photo.TextOfPhoto(label32, label33);
-                Photo.SaveFile(path2, h);
+                Photo.SaveFile(path2, photo16);
+              
                 p++;
                 
             }
@@ -112,46 +116,21 @@ namespace Coursovaa
         }
         private void photo1_2cs_Load(object sender, EventArgs e)
         {
-            Photo photo1 = new Photo("2019", "Коростень");
-            Photo photo2 = new Photo("2019", "Київ");
-            Photo photo3 = new Photo("2019", "Коростень");
-            Photo photo4 = new Photo("2019", "Коростень");
-            Photo photo5 = new Photo("2019", "Коростень");
-            Photo photo6 = new Photo("2019", "Київ");
-            Photo photo7 = new Photo("2019", "Коростень");
-            Photo photo8 = new Photo("2019", "Коростень");
-            Photo photo9 = new Photo("2019", "Коростень");
+           
+            foreach (var i1 in Photo.It.Values.Where(l1 => l1.albums.Name == "Школа"))
+            {
+                if (p1 == 1) { Photo.Inform(label3, label2, pictureBox1,i1); p1++; }
+                else if (p1 == 2) { Photo.Inform(label4, label5, pictureBox1, i1); p1++; }
+                else if (p1 == 3) { Photo.Inform(label6, label7, pictureBox1, i1); p1++; }
+                else if (p1 == 4) { Photo.Inform(label8, label9, pictureBox1,  i1); p1++; }
+                else if (p1 == 5) { Photo.Inform(label10, label11, pictureBox1, i1); p1++; }
+                else if (p1 == 6) { Photo.Inform(label12, label13, pictureBox1, i1); p1++; }
+                else if (p1 == 7) { Photo.Inform(label14, label15, pictureBox1, i1); p1++; }
+                else if (p1 == 8) { Photo.Inform(label16, label17, pictureBox1, i1); p1++; }
+                else if (p1 == 9) { Photo.Inform(label18, label19, pictureBox1,  i1); p1++; }
             
-            Photo.Inform(label3, label2, photo1);
-            Photo.Inform(label4, label5, photo2);
-            Photo.Inform(label6, label7, photo3);
-            Photo.Inform(label8, label9, photo4);
-            Photo.Inform(label10, label11, photo5);
-            Photo.Inform(label12, label13, photo6);
-            Photo.Inform(label14, label15, photo7);
-            Photo.Inform(label16, label17, photo8);
-            Photo.Inform(label18, label19, photo9);
-            string path2 = @"C:\кпи\кпи 1 курс 2 семестр\курсова\Coursovaa\bin\Debug\dannie2.txt";
-            string h = Photo.TextOfPhoto(label2, label3);
-            string h1 = Photo.TextOfPhoto(label5, label4);
-            string h2 = Photo.TextOfPhoto(label7, label6);
-            string h3 = Photo.TextOfPhoto(label9, label8);
-            string h4 = Photo.TextOfPhoto(label11, label10);
-            string h5 = Photo.TextOfPhoto(label13, label12);
-            string h6 = Photo.TextOfPhoto(label15, label14);
-            string h7 = Photo.TextOfPhoto(label17, label16);
-            string h8 = Photo.TextOfPhoto(label19, label18);
-            Photo.SaveFile(path2, h);
-            Photo.SaveFile(path2, h1);
-            Photo.SaveFile(path2, h2);
-            Photo.SaveFile(path2, h3);
-            Photo.SaveFile(path2, h4);
-            Photo.SaveFile(path2, h5);
-            Photo.SaveFile(path2, h6);
-            Photo.SaveFile(path2, h7);
-            Photo.SaveFile(path2, h8);
 
-
+            }
         }
 
         private void pictureBox22_Click(object sender, EventArgs e)
@@ -268,7 +247,7 @@ namespace Coursovaa
         private void bProperties1_Click(object sender, EventArgs e)
         {
             
-            FirstAlbumForm saf = new FirstAlbumForm();
+            SecondAlbumForm saf = new SecondAlbumForm();
             saf.ShowDialog();
             this.Close();
 

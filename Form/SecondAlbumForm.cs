@@ -19,25 +19,16 @@ namespace Coursovaa
 
         private void button2_Click(object sender, EventArgs e)
         {
-            new Linked() { Subjectc = (Subjectc)listSubject2.SelectedItem, times = (time)listTime2.SelectedItem };
-            UpdateSubject1();
+            Linked.Unite(listSubject2, listTime2, lbLinked2);
+            Linked.RefreshLinked(lbLinked2, listSubject2);
+
         }
-        private void UpdateSubject1()
-        {
-            listSubject2.DataSource = null;
-            listSubject2.DataSource = Subjectc.It.Values.ToList();
-        }
+       
 
         private void btdislinked2_Click(object sender, EventArgs e)
         {
-            var s1 = (Subjectc)listSubject2.SelectedItem;
-            var t1 = (time)listTime2.SelectedItem;
-            var del1 = Linked.It.Values.Where(l => l.Subjectc == s1 && l.times == t1).FirstOrDefault();
-            if (del1 != null)
-            {
-                Linked.It.Remove(del1.Id);
-            }
-            Update1();
+            Linked.Separate(listSubject2, listTime2, lbLinked2);
+            Linked.RefreshLinked( lbLinked2, listSubject2);
         }
 
         private void SecondAlbumForm_Load(object sender, EventArgs e)
@@ -48,26 +39,111 @@ namespace Coursovaa
 
         private void btAdd2_Click(object sender, EventArgs e)
         {
-            new Subjectc() { Name = textBox1.Text };
-            UpdateSubject1();
+            Subjectc.AddSub(textBox1);
+            Subjectc.RefreshihgSubjectc(listSubject2);
+            Linked.RefreshLinked(lbLinked2, listSubject2);
         }
 
         private void btdelet2_Click(object sender, EventArgs e)
         {
-            Subjectc.It.Remove(((Subjectc)listSubject2.SelectedItem).Id);
-            UpdateSubject1();
+            Subjectc.Delete(listSubject2);
+            Subjectc.RefreshihgSubjectc(listSubject2);
         }
 
         private void btedit2_Click(object sender, EventArgs e)
         {
             ((Subjectc)listSubject2.SelectedItem).Name = textBox1.Text;
-            UpdateSubject1();
+            Subjectc.RefreshihgSubjectc(listSubject2);
         }
 
         private void btsearch1_Click(object sender, EventArgs e)
         {
-            photo2 ph = new photo2();
-            ph.ShowDialog();
+            var v1 = (Subjectc)listSubject2.SelectedItem;
+            string v3 = lbLinked2.Text;
+
+
+            if (v1.Name == "Подорожі" || v1.Name == "Новий Рік")
+            {
+                WrongName nt = new WrongName();
+                nt.TN = "нажаль, за вибраними критеріями фотографій в цьому альбомі не найдено";
+                nt.ShowDialog();
+            }
+            else if (v1.Name != "Хімія" || v1.Name != "Перший звоник" || v1.Name != "Подорожі" || v1.Name != "Новий Рік")
+            {
+                WrongName nt = new WrongName();
+                nt.TN = "нажаль, за вибраними критеріями фотографій в цьому альбомі не найдено";
+                nt.ShowDialog();
+            }
+            else if (v1.Name == "Хімія" && v3 == "2020")
+            {
+                int y11 = 11;
+                Find F = new Find();
+                F.TN = y11;
+                F.ShowDialog();
+            }
+            else if (v1.Name == "Хімія" && v3 == "2019")
+            {
+                int y11 = 12;
+                Find F = new Find();
+                F.TN = y11;
+                F.ShowDialog();
+            }
+            else if (v1.Name == "Хімія" && v3 == "2021")
+            {
+                int y11 = 13;
+                Find F = new Find();
+                F.TN = y11;
+                F.ShowDialog();
+            }
+            else if (v1.Name == "Хімія" && v3 == "2022")
+            {
+                int y11 = 14;
+                Find F = new Find();
+                F.TN = y11;
+                F.ShowDialog();
+            }
+            else if (v1.Name == "Перший звоник" && v3 == "2020")
+            {
+                int y11 = 15;
+                Find F = new Find();
+                F.TN = y11;
+                F.ShowDialog();
+            }
+            else if (v1.Name == "Перший звоник" && v3 == "2019")
+            {
+                int y11 = 16;
+                Find F = new Find();
+                F.TN = y11;
+                F.ShowDialog();
+            }
+            else if (v1.Name == "Перший звоник" && v3== "2021")
+            {
+                int y11 = 17;
+                Find F = new Find();
+                F.TN = y11;
+                F.ShowDialog();
+            }
+            else if (v1.Name == "Перший звоник" && v3 == "2022")
+            {
+                int y11 = 18;
+                Find F = new Find();
+                F.TN = y11;
+                F.ShowDialog();
+            }
+            else if (v1.Name == "Перший звоник" && v3 == "")
+            {
+                int y11 = 19;
+                Find F = new Find();
+                F.TN = y11;
+                F.ShowDialog();
+            }
+            else if (v1.Name == "Хімія" && v3 =="")
+            {
+                int y11 = 20;
+                Find F = new Find();
+                F.TN = y11;
+                F.ShowDialog();
+            }
         }
 
         private void listSubject2_SelectedIndexChanged(object sender, EventArgs e)
@@ -75,16 +151,10 @@ namespace Coursovaa
             if (listSubject2.SelectedItem != null)
             {
                 textBox1.Text = ((Subjectc)listSubject2.SelectedItem).Name;
+                label7.Text = ((Subjectc)listSubject2.SelectedItem).Name;
             }
-            Update1();
+            Linked.RefreshLinked(lbLinked2, listSubject2);
         }
-        private void Update1()
-        {
-            lbLinked2.DataSource = null;
-            if (listSubject2.SelectedItem != null)
-            {
-                lbLinked2.DataSource = ((Subjectc)listSubject2.SelectedItem).times;
-            }
-        }
+        
     }
 }

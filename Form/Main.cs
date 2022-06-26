@@ -16,6 +16,12 @@ namespace Coursovaa
         {
             InitializeComponent();
         }
+        
+       
+        string path1 = @"C:\кпи\кпи 1 курс 2 семестр\курсова\Coursovaa1\info1.txt";
+        string path2 = @"C:\кпи\кпи 1 курс 2 семестр\курсова\Coursovaa1\info2.txt";
+        string path3= @"C:\кпи\кпи 1 курс 2 семестр\курсова\Coursovaa1\info3.txt";
+
 
         private void open_the_album_Click(object sender, EventArgs e)
         {
@@ -25,14 +31,18 @@ namespace Coursovaa
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            Photo.ReWriteTextFile(path1);
+            Photo.ReWriteTextFile(path2);
+            Photo.ReWriteTextFile(path3);
             var list1 = new Subjectc() { Name = "Подорожі" };
             var list2 = new Subjectc() { Name = "Новий Рік" };
             var list3 = new Subjectc() { Name = "Перший звоник" };
             var list4 = new Subjectc() { Name = "Хімія" };
-            var l = new time() { Name = " 2017-2018" };
-            var l3 =new time() { Name = " 2018-2019" };
-            var l1 = new time() { Name = " 2019-2020" };
-            var l2 = new time() { Name = " 2020-2022" };
+            var l = new time() { Name = "2019" };
+            var l3 =new time() { Name = "2020" };
+            var l1 = new time() { Name = "2021" };
+            var l2 = new time() { Name = "2022" };
+            
         }
     }
 }

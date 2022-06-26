@@ -17,44 +17,55 @@ namespace Coursovaa
             InitializeComponent();
         }
         int p = 1;
+        string path2 = @"C:\кпи\кпи 1 курс 2 семестр\курсова\Coursovaa1\info3.txt";
+       
+        string ph12 = @"C:\кпи\кпи 1 курс 2 семестр\курсова\Coursovaa1\школа\1.jpg";
+        Album n1 = new Album();
         private void button1_Click(object sender, EventArgs e)
         {
-            Photo photo1 = new Photo("2019", "Київ");
-            Photo photo2 = new Photo("2019", "Київ");
-            Photo photo3 = new Photo("2019", "Київ");
-            Photo photo4 = new Photo("2019", "Київ");
-            Photo photo5 = new Photo("2019", "Київ");
-            Photo photo6 = new Photo("2019", "Київ");
-            Photo photo7 = new Photo("2019", "Київ");
-            Photo photo8 = new Photo("2019", "Київ");
-            Photo photo9 = new Photo("2019", "Київ");
-            Photo photo10 = new Photo("2019", "Київ");
-           
-            
-            pictureBox21.Image = Image.FromFile(@"C:\кпи\кпи 1 курс 2 семестр\курсова\INFORM.png");
+            Photo photo1 = new Photo() { Data = "2020", Geo = "Київ",albums=n1 };
+            Photo photo2 = new Photo() { Data = "2018", Geo = "Коростень", albums = n1 };
+            Photo photo3 = new Photo() { Data = "2022", Geo = "Київ", albums = n1 };
+            Photo photo4 = new Photo() { Data = "2019", Geo = "Харків", albums = n1 };
+            Photo photo5 = new Photo() { Data = "2022", Geo = "Київ", albums = n1 };
+            Photo photo6 = new Photo() { Data = "2017", Geo = "Одеса", albums = n1 };
+            Photo photo7 = new Photo() { Data = "2018", Geo = "Коростень", albums = n1 };
+            Photo photo8 = new Photo() { Data = "2020", Geo = "Київ", albums = n1 };
+            Photo photo9 = new Photo() { Data = "2017", Geo = "Київ",albums=n1 };
+            Photo photo10 = new Photo() { Data = "2018", Geo = "Київ", albums = n1 };
+
+            pictureBox21.Image = Image.FromFile( @"C:\кпи\кпи 1 курс 2 семестр\курсова\Coursovaa1\свойства.jpg");
             if (p == 1)
                 { 
                     Photo.AddPicture(pictureBox1,label2, label3, photo1);
                     AddPictureForInform(this.pictureBox21.Image, pictureBox11);
-                    label1.Text = "В альбомі є фото, дякуєм , що добавили";
+                Photo.SaveFile(path2, photo1);
+                label1.Text = "В альбомі є фото, дякуєм , що добавили";
+                
                     p++;
                 }
                 else if (p == 2)
                 {
                 Photo.AddPicture(pictureBox2, label5, label4, photo2);
                 AddPictureForInform(this.pictureBox21.Image, pictureBox12);
+                Photo.SaveFile(path2, photo2);
+        
                 p++;
                 }
                 else if (p == 3)
                 {
                 Photo.AddPicture(pictureBox3, label7, label6, photo3);
                 AddPictureForInform(this.pictureBox21.Image, pictureBox13);
+                Photo.SaveFile(path2, photo3);
+               
                 p++;
                 }
                 else if (p == 4)
                 {
                 Photo.AddPicture(pictureBox4, label9, label8, photo4);
                 AddPictureForInform(this.pictureBox21.Image, pictureBox14);
+                Photo.SaveFile(path2, photo4);
+                
                 p++;
                 }
                 else if (p == 5)
@@ -62,36 +73,48 @@ namespace Coursovaa
 
                 Photo.AddPicture(pictureBox5, label11, label10, photo5);
                 AddPictureForInform(this.pictureBox21.Image, pictureBox15);
+                Photo.SaveFile(path2, photo5);
+           
                 p++;
                 }
                 else if (p == 6)
                 {
-                Photo.AddPicture(pictureBox6, label13, label12, photo6);
+                Photo.AddPicture(pictureBox6, label13, label18, photo6);
                 AddPictureForInform(this.pictureBox21.Image, pictureBox16);
+                Photo.SaveFile(path2, photo6);
+              
                 p++;
                 }
                 else if (p == 7)
                 {
-                Photo.AddPicture(pictureBox7, label15, label14, photo7);
+                Photo.AddPicture(pictureBox7, label15, label22, photo7);
                 AddPictureForInform(this.pictureBox21.Image, pictureBox17);
+                Photo.SaveFile(path2, photo7);
+               
                 p++;
                 }
                 else if (p == 8)
                 {
-                Photo.AddPicture(pictureBox8, label17, label16, photo8);
+                Photo.AddPicture(pictureBox8, label17, label23, photo8);
                 AddPictureForInform(this.pictureBox21.Image, pictureBox18);
+                Photo.SaveFile(path2, photo8);
+                
                 p++;
                 }
                 else if (p == 9)
                 {
                 Photo.AddPicture(pictureBox9, label19, label24, photo9);
                 AddPictureForInform(this.pictureBox21.Image, pictureBox19);
+                Photo.SaveFile(path2, photo9);
+                
                 p++;
                 }
                 else if (p == 10)
                 {
                 Photo.AddPicture(pictureBox10, label21, label20, photo10);
                 AddPictureForInform(this.pictureBox21.Image, pictureBox20);
+                Photo.SaveFile(path2, photo10);
+               
                 p++;
                 }
                 else if (p == 11) 
@@ -182,7 +205,8 @@ namespace Coursovaa
 
         private void btproperties_Click(object sender, EventArgs e)
         {
-            Album.ShowProperties();
+            FirstAlbumForm p = new FirstAlbumForm();
+            Album.OpenAlbum(p);
         }
 
         internal void AddPictureForInform(Image img,PictureBox PB2)
@@ -261,6 +285,12 @@ namespace Coursovaa
             FormShowInfoPhoto fsip = new FormShowInfoPhoto();
             fsip.TN = "Місце : " + label21.Text + " " + " Дата: " + label20.Text;
             fsip.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+           
+            this.Close();
         }
     }
 }

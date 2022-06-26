@@ -18,8 +18,15 @@ namespace Coursovaa
         public List<Linked> Linkeds
         {
             get
+
             {
-               return Linked.It.Values.Where(l => l.Subjectc == this).ToList();
+                List<Linked> result = new List<Linked>();
+                    foreach(var i in Linked.It.Values)
+                {
+                    if (i.Subjectc == this)
+                        result.Add(i);
+                }
+                return result;
             } 
         }
         public List<time> times

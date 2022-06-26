@@ -18,7 +18,14 @@ namespace Coursovaa
         {
             get
             {
-                return Linked.It.Values.Where(l => l.times== this).ToList();
+                List<Linked> result = new List<Linked>();
+                foreach (var i in Linked.It.Values)
+                {
+                    if (i.times== this)
+                        result.Add(i);
+                }
+                return result;
+                
             }
 
         }

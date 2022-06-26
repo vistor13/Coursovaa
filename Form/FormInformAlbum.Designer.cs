@@ -105,6 +105,7 @@ namespace Coursovaa
             this.Controls.Add(this.label1);
             this.Name = "FormInformAlbum";
             this.Text = "FormInformAlbum";
+            this.Load += new System.EventHandler(this.FormInformAlbum_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

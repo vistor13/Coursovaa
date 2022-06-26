@@ -12,10 +12,12 @@ namespace Coursovaa
 {
     public partial class FirstAlbumForm : Form
     {
+        
         public FirstAlbumForm()
         {
             InitializeComponent();
         }
+       
         private void FirstAlbumForm_Load(object sender, EventArgs e)
         { 
             listSubject1.DataSource = Subjectc.It.Values.ToList();
@@ -56,62 +58,125 @@ namespace Coursovaa
 
         private void button1_Click(object sender, EventArgs e)
         {
-              var exist = existing();
-                if (exist == null)
-                    new Linked() { Subjectc = (Subjectc)listSubject1.SelectedItem, times = (time)listTime1.SelectedItem };
+            try
+            {
+                Linked.Unite(listSubject1, listTime1, lbLinked1);
+              
                 Linked.RefreshLinked(lbLinked1, listSubject1);
-           
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
         private void btdislinked_Click(object sender, EventArgs e)
         {
-                Linked del = existing();
-                if (del != null)
-                {
-                    Linked.It.Remove(del.Id);
-                Linked.RefreshLinked(lbLinked1, listSubject1);
-            } 
-          
+            Linked.Separate(listSubject1, listTime1, lbLinked1);
+            Linked.RefreshLinked(lbLinked1,listSubject1);
         }
 
-        private Linked existing()
-        {
-            var s = (Subjectc)listSubject1.SelectedItem;
-            var t = (time)listTime1.SelectedItem;
-            var del = Linked.It.Values.Where(l => l.Subjectc == s && l.times == t).FirstOrDefault();
-            return del;
-        }
+    
 
         private void btsearch_Click(object sender, EventArgs e)
         {
-            
-            var exis = existing();
-            var sub1 = exis.Subjectc.Name == "Новий Рік";
-            var sub2 = exis.Subjectc.Name == "Перший звоник";
-            var sub3 = exis.Subjectc.Name == "Подорожі";
-            var sub4 = exis.Subjectc.Name == "Хімія";
-            var time2 = exis.times.Name == " 2019-2020";
-            var time3 = exis.times.Name == " 2020-2022";
-            if (exis == null)
+           
+            var v1=(Subjectc)listSubject1.SelectedItem;
+            string v3 = lbLinked1.Text;
+
+            if (v1.Name == "Хімія" || v1.Name == "Перший звоник")
             {
-                photo1 ph = new photo1();
-                ph.ShowDialog();
-                this.Close();
+                WrongName nt = new WrongName();
+                nt.TN = "нажаль, за вибраними критеріями фотографій в цьому альбомі не найдено";
+                nt.ShowDialog();
             }
-            else if (sub1&&time2)
+            else if (v1.Name != "Хімія" || v1.Name != "Перший звоник"|| v1.Name != "Подорожі"|| v1.Name != "Новий Рік")
             {
-                Wrong p = new Wrong();
-                p.ShowDialog();
+                WrongName nt = new WrongName();
+                nt.TN = "нажаль, за вибраними критеріями фотографій в цьому альбомі не найдено";
+                nt.ShowDialog();
             }
-            else if (sub1&&time2)
+            else if (v1.Name == "Подорожі" && v3 == "2020")
             {
-                Wrong p = new Wrong();
-                p.ShowDialog();
+                int y11 = 1;
+                Find F = new Find();
+                F.TN = y11;
+                F.ShowDialog();
+       
             }
-            else if (sub1 &&time3)
+            else if (v1.Name == "Подорожі" && v3 == "2019")
             {
-                Wrong p = new Wrong();
-                p.ShowDialog();
+                int y11 = 2;
+                Find F = new Find();
+                F.TN = y11;
+                F.ShowDialog();
             }
+            else if (v1.Name == "Подорожі" && v3 == "2021")
+            {
+                int y11 = 3;
+                Find F = new Find();
+                F.TN = y11;
+                F.ShowDialog();
+            }
+            else if (v1.Name == "Подорожі" && v3 == "2022")
+            {
+                int y11 = 4;
+                Find F = new Find();
+                F.TN = y11;
+                F.ShowDialog();
+            }
+            else if (v1.Name == "Новий Рік" && v3 == "2020")
+            {
+                int y11 = 5;
+                Find F = new Find();
+                F.TN = y11;
+                F.ShowDialog();
+            }
+            else if (v1.Name == "Новий Рік" && v3 == "2019")
+            {
+                int y11 = 6;
+                Find F = new Find();
+                F.TN = y11;
+                F.ShowDialog();
+            }
+            else if (v1.Name == "Новий Рік" && v3 == "2021")
+            {
+                int y11 = 7;
+                Find F = new Find();
+                F.TN = y11;
+                F.ShowDialog();
+            }
+            else if (v1.Name == "Новий Рік" && v3 == "2022")
+            {
+                int y11 = 8;
+                Find F = new Find();
+                F.TN = y11;
+                F.ShowDialog();
+            }
+            else if (v1.Name == "Новий Рік"&& v3=="")
+            {
+                int y11 = 9;
+                Find F = new Find();
+                F.TN = y11;
+                F.ShowDialog();
+            }
+            else if (v1.Name == "Подорожі"&& v3 =="") 
+            {
+                int y11 = 10;
+                Find F = new Find();
+                F.TN = y11;
+                F.ShowDialog();
+            }
+           
+        }
+
+        private void listTime1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+        public override string ToString()
+        {
+            return lbLinked1.Text;
         }
     }
 }
